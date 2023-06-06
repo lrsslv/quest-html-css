@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    cursor: auto;
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    outline: none;
+}
