@@ -16,13 +16,6 @@ body {
     max-width: 1440px;
 }
 
-@media (max-width: 710px) {
-    body {
-        background: var(--primary-dark) url(../images/bg-mobile.svg) top center no-repeat;
-        background-size: contain;
-    }
-}
-
 /* HEADER */
 header {
     grid-area: header;
@@ -31,13 +24,6 @@ header {
 header .logo {
     width: 217px;
     margin: 22px 52px;
-}
-
-@media (max-width: 710px) {
-    header .logo {
-        width: 150px;
-        margin: 20px 10px;
-    }
 }
 
 /* MAIN */
@@ -85,6 +71,7 @@ main .description .button {
     font-size: 18px;
     margin-top: 24px;
     padding: 15px 64px;
+    box-shadow: 6px 6px 7px #4E3C80;
     border-radius: 35px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
@@ -93,43 +80,6 @@ main .description .button {
 main .description .button:hover {
     background-color: var(--primary-light);
     color: #ffffff;
-}
-
-@media (max-width: 710px) {
-    main {
-        display: flex;
-        flex-direction: column;
-    }
-
-    main .example-image {
-        margin: 20px;
-    }
-
-    main .example-image img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    main .description {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 55px;
-        margin-left: 0;
-    }
-
-    main .description .title {
-        text-align: center;
-        font-size: 27px;
-    }
-
-    main .description .text {
-        text-align: center;
-    }
-
-    main .description .button {
-        padding: 15px 100px;
-    }
 }
 
 /* FOOTER */
@@ -176,13 +126,4 @@ footer .social .circle:hover {
 .fa-twitter:hover,
 .fa-instagram:hover {
     color: var(--primary-light);
-}
-
-@media (max-width: 710px) {
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 60px;
-    }
 }
